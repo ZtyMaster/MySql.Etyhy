@@ -28,6 +28,10 @@
     <ProjectReference Include="..\MySql.ETyhy.Web.Core\MySql.ETyhy.Web.Core.csproj" />
   </ItemGroup>
   <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="2.2.1">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers</IncludeAssets>
+    </PackageReference>
     <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="2.2.1">
       <PrivateAssets>All</PrivateAssets>
     </PackageReference>

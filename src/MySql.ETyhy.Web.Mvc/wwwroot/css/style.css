@@ -7503,7 +7503,7 @@ fieldset[disabled] .form-control {
     white-space: nowrap;
     position: relative;
     border-bottom: 1px solid #e9e9e9;
-    background: url("../images/user-img-background.jpg") no-repeat no-repeat;
+    /*background: url("../images/user-img-background.jpg") no-repeat no-repeat;*/
     height: 135px; }
     .sidebar .user-info .image {
       margin-right: 12px;
@@ -7527,26 +7527,28 @@ fieldset[disabled] .form-control {
         overflow: hidden;
         font-size: 14px;
         max-width: 200px;
-        color: #fff; }
-      .sidebar .user-info .info-container .email {
-        white-space: nowrap;
-        -ms-text-overflow: ellipsis;
-        -o-text-overflow: ellipsis;
-        text-overflow: ellipsis;
-        overflow: hidden;
-        font-size: 12px;
-        max-width: 200px;
-        color: #fff; }
-      .sidebar .user-info .info-container .user-helper-dropdown {
-        position: absolute;
-        right: -3px;
-        bottom: -12px;
-        -webkit-box-shadow: none;
-        -moz-box-shadow: none;
-        -ms-box-shadow: none;
-        box-shadow: none;
-        cursor: pointer;
-        color: #fff; }
+        color: #00BCD4; }
+        .sidebar .user-info .info-container .email {
+            white-space: nowrap;
+            -ms-text-overflow: ellipsis;
+            -o-text-overflow: ellipsis;
+            text-overflow: ellipsis;
+            overflow: hidden;
+            font-size: 12px;
+            max-width: 200px;
+            color: #00BCD4;
+        }
+        .sidebar .user-info .info-container .user-helper-dropdown {
+            position: absolute;
+            right: -3px;
+            bottom: -12px;
+            -webkit-box-shadow: none;
+            -moz-box-shadow: none;
+            -ms-box-shadow: none;
+            box-shadow: none;
+            cursor: pointer;
+            color: #00BCD4;
+        }
   .sidebar .menu {
     position: relative;
     overflow-y: auto;
