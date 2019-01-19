@@ -1,3 +1,4 @@
+using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
 using Abp.Auditing;
 using Abp.Authorization.Users;
@@ -19,7 +20,7 @@ namespace MySql.ETyhy.Users.Dto
         public string Name { get; set; }
 
         [Required]
-        [StringLength(AbpUserBase.MaxSurnameLength)]
+        [StringLength(AbpUserBase.MaxSurnameLength)]       
         public string Surname { get; set; }
 
         [Required]

@@ -19,6 +19,7 @@ function skinChanger() {
     });
 }
 
+
 //Skin tab content set height and show scroll
 function setSkinListHeightAndScroll() {
     var height = $(window).height() - ($('.navbar').innerHeight() + $('.right-sidebar .nav-tabs').outerHeight());
@@ -66,7 +67,13 @@ function activateNotificationAndTasksScroll() {
         railBorderRadius: '0'
     });
 }
-
+$('#datetimepicker').datetimepicker({
+    format: 'yyyy-mm-dd',
+    minView: "month",
+    language: 'zh-CN',
+    todayBtn: 1,
+    autoclose: 1
+});
 (function ($) {
 
     //Initialize BSB admin features
@@ -80,6 +87,7 @@ function activateNotificationAndTasksScroll() {
             setSkinListHeightAndScroll();
             setSettingListHeightAndScroll();
         });
+       
     });
 
 })(jQuery);

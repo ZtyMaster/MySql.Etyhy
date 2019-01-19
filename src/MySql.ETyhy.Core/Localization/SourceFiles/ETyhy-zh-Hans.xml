@@ -97,8 +97,49 @@
     <text name="DefaultPasswordIs">默认密码为：{0}</text>
     <text name="DeleteTenantConfirm">确认删除该租户？</text>
     <text name="EditTenant">编辑租户</text>
+
+    <text name="TName"  value="名称"></text>
+    <text name="BumensId"  value="部门ID"></text>
+    <text name="Bumens"  value="部门"></text>
+    <text name="Shot"  value="排序"></text>
+
+    <text name="IsTopBm"  value="是否一级部门"></text>
+    <text name="ComasId"  value="公司Id"></text>
+    <text name="Comas"  value="公司名称"></text>
+    <text name="Zhiws"  value="职务"></text>
+    <text name="ComsaTitle"  value="公司设置"></text>
+    <text name="CreateNewComas"  value="新建公司"></text>
     
+
+
+    <text name="OverTime"  value="到期时间"></text>
+    <text name="MaxPersons"  value="最大账号数量"></text>
+    <text name="BuMens"  value="部门"></text>
     
+    <text name="QueryZhiws"  value="查询"></text>
+    <text name="CreateZhiws"  value="添加"></text>
+    <text name="EditZhiws"  value="编辑"></text>
+    <text name="DeleteZhiws"  value="删除"></text>
+    <text name="BatchDeleteZhiws" value="批量删除"></text>
+    <text name="ExportZhiws"  value="导出"></text>   
+    
+
+    <text name="QueryBuMens"  value="查询"></text>
+    <text name="CreateBuMens"  value="添加"></text>
+    <text name="EditBuMens"  value="编辑"></text>
+    <text name="DeleteBuMens"  value="删除"></text>
+    <text name="BatchDeleteBuMens" value="批量删除"></text>
+    <text name="ExportBuMens"  value="导出"></text>
+
+
+    <text name="QueryComas"  value="查询"></text>
+    <text name="CreateComas"  value="添加"></text>
+    <text name="EditComas"  value="编辑"></text>
+    <text name="DeleteComas"  value="删除"></text>
+    <text name="BatchDeleteComas" value="批量删除"></text>
+    <text name="ExportComas"  value="导出"></text>
+    <text name="BaoJingTitle"  value="警情通知"></text>
+
   </texts>
 </localizationDictionary>
 

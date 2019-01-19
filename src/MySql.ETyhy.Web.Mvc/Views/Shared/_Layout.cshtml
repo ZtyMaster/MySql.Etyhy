@@ -49,6 +49,7 @@
         <link href="~/css/style.css" rel="stylesheet" asp-append-version="true">
         <link href="~/css/themes/all-themes.css" rel="stylesheet" asp-append-version="true" />
         <link href="~/view-resources/Views/Shared/_Layout.css" rel="stylesheet" asp-append-version="true" />
+        <link href="~/css/bootstrap-datetimepicker.min.css" rel="stylesheet" asp-append-version="true" />
     </environment>
 
     <environment names="Staging,Production">
@@ -190,8 +191,10 @@
         <script src="~/lib/abp-web-resources/Abp/Framework/scripts/libs/abp.sweet-alert.js" asp-append-version="true"></script>
         <script src="~/js/admin.js" asp-append-version="true"></script>
         <script src="~/js/main.js" asp-append-version="true"></script>
-        <script src="~/view-resources/Views/Shared/_Layout.js" asp-append-version="true"></script>
 
+        <script src="~/lib/bootstrap-datetimepicker/bootstrap-datetimepicker.min.js" asp-append-version="true"></script>
+        <script src="~/lib/bootstrap-datetimepicker/locales/bootstrap-datetimepicker.zh-CN.js" asp-append-version="true"></script>
+        <script src="~/view-resources/Views/Shared/_Layout.js" asp-append-version="true"></script>
         @if (CultureInfo.CurrentUICulture.Name != "en")
         {
             <script src="~/lib/jquery-validation/src/localization/messages_@Html.Raw(CultureInfo.CurrentUICulture.Name.Replace("-", "_") + ".js")" asp-append-version="true"></script>

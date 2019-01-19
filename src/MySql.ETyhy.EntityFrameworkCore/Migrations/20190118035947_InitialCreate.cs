@@ -4,7 +4,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace MySql.ETyhy.Migrations
 {
-    public partial class mysql20190118_001 : Migration
+    public partial class InitialCreate : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -316,10 +316,10 @@ namespace MySql.ETyhy.Migrations
                 });
 
             migrationBuilder.CreateTable(
-                name: "AbpUsers",
+                name: "Comass",
                 columns: table => new
                 {
-                    Id = table.Column<long>(nullable: false)
+                    Id = table.Column<int>(nullable: false)
                         .Annotation("MySql:ValueGenerationStrategy", MySqlValueGenerationStrategy.IdentityColumn),
                     CreationTime = table.Column<DateTime>(nullable: false),
                     CreatorUserId = table.Column<long>(nullable: true),
@@ -328,50 +328,13 @@ namespace MySql.ETyhy.Migrations
                     IsDeleted = table.Column<bool>(nullable: false),
                     DeleterUserId = table.Column<long>(nullable: true),
                     DeletionTime = table.Column<DateTime>(nullable: true),
-                    AuthenticationSource = table.Column<string>(maxLength: 64, nullable: true),
-                    UserName = table.Column<string>(maxLength: 256, nullable: false),
-                    TenantId = table.Column<int>(nullable: true),
-                    EmailAddress = table.Column<string>(maxLength: 256, nullable: false),
-                    Name = table.Column<string>(maxLength: 64, nullable: false),
-                    Surname = table.Column<string>(maxLength: 64, nullable: false),
-                    Password = table.Column<string>(maxLength: 128, nullable: false),
-                    EmailConfirmationCode = table.Column<string>(maxLength: 328, nullable: true),
-                    PasswordResetCode = table.Column<string>(maxLength: 328, nullable: true),
-                    LockoutEndDateUtc = table.Column<DateTime>(nullable: true),
-                    AccessFailedCount = table.Column<int>(nullable: false),
-                    IsLockoutEnabled = table.Column<bool>(nullable: false),
-                    PhoneNumber = table.Column<string>(maxLength: 32, nullable: true),
-                    IsPhoneNumberConfirmed = table.Column<bool>(nullable: false),
-                    SecurityStamp = table.Column<string>(maxLength: 128, nullable: true),
-                    IsTwoFactorEnabled = table.Column<bool>(nullable: false),
-                    IsEmailConfirmed = table.Column<bool>(nullable: false),
-                    IsActive = table.Column<bool>(nullable: false),
-                    LastLoginTime = table.Column<DateTime>(nullable: true),
-                    NormalizedUserName = table.Column<string>(maxLength: 256, nullable: false),
-                    NormalizedEmailAddress = table.Column<string>(maxLength: 256, nullable: false),
-                    ConcurrencyStamp = table.Column<string>(maxLength: 128, nullable: true)
+                    TName = table.Column<string>(maxLength: 255, nullable: false),
+                    OverTime = table.Column<DateTime>(nullable: false),
+                    MaxPersons = table.Column<int>(nullable: false)
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_AbpUsers", x => x.Id);
-                    table.ForeignKey(
-                        name: "FK_AbpUsers_AbpUsers_CreatorUserId",
-                        column: x => x.CreatorUserId,
-                        principalTable: "AbpUsers",
-                        principalColumn: "Id",
-                        onDelete: ReferentialAction.Restrict);
-                    table.ForeignKey(
-                        name: "FK_AbpUsers_AbpUsers_DeleterUserId",
-                        column: x => x.DeleterUserId,
-                        principalTable: "AbpUsers",
-                        principalColumn: "Id",
-                        onDelete: ReferentialAction.Restrict);
-                    table.ForeignKey(
-                        name: "FK_AbpUsers_AbpUsers_LastModifierUserId",
-                        column: x => x.LastModifierUserId,
-                        principalTable: "AbpUsers",
-                        principalColumn: "Id",
-                        onDelete: ReferentialAction.Restrict);
+                    table.PrimaryKey("PK_Comass", x => x.Id);
                 });
 
             migrationBuilder.CreateTable(
@@ -419,6 +382,126 @@ namespace MySql.ETyhy.Migrations
                         name: "FK_AbpEntityChanges_AbpEntityChangeSets_EntityChangeSetId",
                         column: x => x.EntityChangeSetId,
                         principalTable: "AbpEntityChangeSets",
+                        principalColumn: "Id",
+                        onDelete: ReferentialAction.Cascade);
+                });
+
+            migrationBuilder.CreateTable(
+                name: "AbpUsers",
+                columns: table => new
+                {
+                    Id = table.Column<long>(nullable: false)
+                        .Annotation("MySql:ValueGenerationStrategy", MySqlValueGenerationStrategy.IdentityColumn),
+                    CreationTime = table.Column<DateTime>(nullable: false),
+                    CreatorUserId = table.Column<long>(nullable: true),
+                    LastModificationTime = table.Column<DateTime>(nullable: true),
+                    LastModifierUserId = table.Column<long>(nullable: true),
+                    IsDeleted = table.Column<bool>(nullable: false),
+                    DeleterUserId = table.Column<long>(nullable: true),
+                    DeletionTime = table.Column<DateTime>(nullable: true),
+                    AuthenticationSource = table.Column<string>(maxLength: 64, nullable: true),
+                    UserName = table.Column<string>(maxLength: 256, nullable: false),
+                    TenantId = table.Column<int>(nullable: true),
+                    EmailAddress = table.Column<string>(maxLength: 256, nullable: false),
+                    Name = table.Column<string>(maxLength: 64, nullable: false),
+                    Surname = table.Column<string>(maxLength: 64, nullable: false),
+                    Password = table.Column<string>(maxLength: 128, nullable: false),
+                    EmailConfirmationCode = table.Column<string>(maxLength: 328, nullable: true),
+                    PasswordResetCode = table.Column<string>(maxLength: 328, nullable: true),
+                    LockoutEndDateUtc = table.Column<DateTime>(nullable: true),
+                    AccessFailedCount = table.Column<int>(nullable: false),
+                    IsLockoutEnabled = table.Column<bool>(nullable: false),
+                    PhoneNumber = table.Column<string>(maxLength: 32, nullable: true),
+                    IsPhoneNumberConfirmed = table.Column<bool>(nullable: false),
+                    SecurityStamp = table.Column<string>(maxLength: 128, nullable: true),
+                    IsTwoFactorEnabled = table.Column<bool>(nullable: false),
+                    IsEmailConfirmed = table.Column<bool>(nullable: false),
+                    IsActive = table.Column<bool>(nullable: false),
+                    LastLoginTime = table.Column<DateTime>(nullable: true),
+                    NormalizedUserName = table.Column<string>(maxLength: 256, nullable: false),
+                    NormalizedEmailAddress = table.Column<string>(maxLength: 256, nullable: false),
+                    ConcurrencyStamp = table.Column<string>(maxLength: 128, nullable: true),
+                    ComasId = table.Column<int>(nullable: true),
+                    Appid = table.Column<string>(nullable: true)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_AbpUsers", x => x.Id);
+                    table.ForeignKey(
+                        name: "FK_AbpUsers_Comass_ComasId",
+                        column: x => x.ComasId,
+                        principalTable: "Comass",
+                        principalColumn: "Id",
+                        onDelete: ReferentialAction.Restrict);
+                    table.ForeignKey(
+                        name: "FK_AbpUsers_AbpUsers_CreatorUserId",
+                        column: x => x.CreatorUserId,
+                        principalTable: "AbpUsers",
+                        principalColumn: "Id",
+                        onDelete: ReferentialAction.Restrict);
+                    table.ForeignKey(
+                        name: "FK_AbpUsers_AbpUsers_DeleterUserId",
+                        column: x => x.DeleterUserId,
+                        principalTable: "AbpUsers",
+                        principalColumn: "Id",
+                        onDelete: ReferentialAction.Restrict);
+                    table.ForeignKey(
+                        name: "FK_AbpUsers_AbpUsers_LastModifierUserId",
+                        column: x => x.LastModifierUserId,
+                        principalTable: "AbpUsers",
+                        principalColumn: "Id",
+                        onDelete: ReferentialAction.Restrict);
+                });
+
+            migrationBuilder.CreateTable(
+                name: "BuMenss",
+                columns: table => new
+                {
+                    Id = table.Column<int>(nullable: false)
+                        .Annotation("MySql:ValueGenerationStrategy", MySqlValueGenerationStrategy.IdentityColumn),
+                    CreationTime = table.Column<DateTime>(nullable: false),
+                    CreatorUserId = table.Column<long>(nullable: true),
+                    LastModificationTime = table.Column<DateTime>(nullable: true),
+                    LastModifierUserId = table.Column<long>(nullable: true),
+                    IsDeleted = table.Column<bool>(nullable: false),
+                    DeleterUserId = table.Column<long>(nullable: true),
+                    DeletionTime = table.Column<DateTime>(nullable: true),
+                    TName = table.Column<string>(maxLength: 255, nullable: false),
+                    Shot = table.Column<int>(nullable: false),
+                    IsTopBm = table.Column<bool>(nullable: false),
+                    ComasId = table.Column<int>(nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_BuMenss", x => x.Id);
+                    table.ForeignKey(
+                        name: "FK_BuMenss_Comass_ComasId",
+                        column: x => x.ComasId,
+                        principalTable: "Comass",
+                        principalColumn: "Id",
+                        onDelete: ReferentialAction.Cascade);
+                });
+
+            migrationBuilder.CreateTable(
+                name: "AbpEntityPropertyChanges",
+                columns: table => new
+                {
+                    Id = table.Column<long>(nullable: false)
+                        .Annotation("MySql:ValueGenerationStrategy", MySqlValueGenerationStrategy.IdentityColumn),
+                    EntityChangeId = table.Column<long>(nullable: false),
+                    NewValue = table.Column<string>(maxLength: 512, nullable: true),
+                    OriginalValue = table.Column<string>(maxLength: 512, nullable: true),
+                    PropertyName = table.Column<string>(maxLength: 96, nullable: true),
+                    PropertyTypeFullName = table.Column<string>(maxLength: 192, nullable: true),
+                    TenantId = table.Column<int>(nullable: true)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_AbpEntityPropertyChanges", x => x.Id);
+                    table.ForeignKey(
+                        name: "FK_AbpEntityPropertyChanges_AbpEntityChanges_EntityChangeId",
+                        column: x => x.EntityChangeId,
+                        principalTable: "AbpEntityChanges",
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Cascade);
                 });
@@ -636,25 +719,29 @@ namespace MySql.ETyhy.Migrations
                 });
 
             migrationBuilder.CreateTable(
-                name: "AbpEntityPropertyChanges",
+                name: "Zhiwss",
                 columns: table => new
                 {
-                    Id = table.Column<long>(nullable: false)
+                    Id = table.Column<int>(nullable: false)
                         .Annotation("MySql:ValueGenerationStrategy", MySqlValueGenerationStrategy.IdentityColumn),
-                    EntityChangeId = table.Column<long>(nullable: false),
-                    NewValue = table.Column<string>(maxLength: 512, nullable: true),
-                    OriginalValue = table.Column<string>(maxLength: 512, nullable: true),
-                    PropertyName = table.Column<string>(maxLength: 96, nullable: true),
-                    PropertyTypeFullName = table.Column<string>(maxLength: 192, nullable: true),
-                    TenantId = table.Column<int>(nullable: true)
+                    CreationTime = table.Column<DateTime>(nullable: false),
+                    CreatorUserId = table.Column<long>(nullable: true),
+                    LastModificationTime = table.Column<DateTime>(nullable: true),
+                    LastModifierUserId = table.Column<long>(nullable: true),
+                    IsDeleted = table.Column<bool>(nullable: false),
+                    DeleterUserId = table.Column<long>(nullable: true),
+                    DeletionTime = table.Column<DateTime>(nullable: true),
+                    TName = table.Column<string>(maxLength: 255, nullable: false),
+                    Shot = table.Column<int>(nullable: false),
+                    BumensId = table.Column<int>(nullable: false)
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_AbpEntityPropertyChanges", x => x.Id);
+                    table.PrimaryKey("PK_Zhiwss", x => x.Id);
                     table.ForeignKey(
-                        name: "FK_AbpEntityPropertyChanges_AbpEntityChanges_EntityChangeId",
-                        column: x => x.EntityChangeId,
-                        principalTable: "AbpEntityChanges",
+                        name: "FK_Zhiwss_BuMenss_BumensId",
+                        column: x => x.BumensId,
+                        principalTable: "BuMenss",
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Cascade);
                 });
@@ -981,6 +1068,11 @@ namespace MySql.ETyhy.Migrations
                 columns: new[] { "TenantId", "UserId" });
 
             migrationBuilder.CreateIndex(
+                name: "IX_AbpUsers_ComasId",
+                table: "AbpUsers",
+                column: "ComasId");
+
+            migrationBuilder.CreateIndex(
                 name: "IX_AbpUsers_CreatorUserId",
                 table: "AbpUsers",
                 column: "CreatorUserId");
@@ -1014,6 +1106,16 @@ namespace MySql.ETyhy.Migrations
                 name: "IX_AbpUserTokens_TenantId_UserId",
                 table: "AbpUserTokens",
                 columns: new[] { "TenantId", "UserId" });
+
+            migrationBuilder.CreateIndex(
+                name: "IX_BuMenss_ComasId",
+                table: "BuMenss",
+                column: "ComasId");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_Zhiwss_BumensId",
+                table: "Zhiwss",
+                column: "BumensId");
         }
 
         protected override void Down(MigrationBuilder migrationBuilder)
@@ -1085,6 +1187,9 @@ namespace MySql.ETyhy.Migrations
                 name: "AbpUserTokens");
 
             migrationBuilder.DropTable(
+                name: "Zhiwss");
+
+            migrationBuilder.DropTable(
                 name: "AbpEntityChanges");
 
             migrationBuilder.DropTable(
@@ -1094,10 +1199,16 @@ namespace MySql.ETyhy.Migrations
                 name: "AbpEditions");
 
             migrationBuilder.DropTable(
+                name: "BuMenss");
+
+            migrationBuilder.DropTable(
                 name: "AbpEntityChangeSets");
 
             migrationBuilder.DropTable(
                 name: "AbpUsers");
+
+            migrationBuilder.DropTable(
+                name: "Comass");
         }
     }
 }

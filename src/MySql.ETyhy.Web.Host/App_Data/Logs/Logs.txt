@@ -1,0 +1,207 @@
+DEBUG 2019-01-18 09:30:26,683 [1    ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2019-01-18 09:30:26,825 [1    ] Abp.Modules.AbpModuleManager             - Found 15 ABP modules in total.
+DEBUG 2019-01-18 09:30:26,850 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: MySql.ETyhy.Web.Host.Startup.ETyhyWebHostModule, MySql.ETyhy.Web.Host, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-01-18 09:30:26,854 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: MySql.ETyhy.ETyhyWebCoreModule, MySql.ETyhy.Web.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-01-18 09:30:26,855 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: MySql.ETyhy.ETyhyApplicationModule, MySql.ETyhy.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-01-18 09:30:26,856 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: MySql.ETyhy.ETyhyCoreModule, MySql.ETyhy.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-01-18 09:30:26,856 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCoreModule, Abp.ZeroCore, Version=4.1.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-01-18 09:30:26,857 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCommonModule, Abp.Zero.Common, Version=4.1.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-01-18 09:30:26,857 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=4.1.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-01-18 09:30:26,858 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AutoMapper.AbpAutoMapperModule, Abp.AutoMapper, Version=4.1.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-01-18 09:30:26,858 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: MySql.ETyhy.EntityFrameworkCore.ETyhyEntityFrameworkModule, MySql.ETyhy.EntityFrameworkCore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-01-18 09:30:26,859 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.EntityFrameworkCore.AbpZeroCoreEntityFrameworkCoreModule, Abp.ZeroCore.EntityFrameworkCore, Version=4.1.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-01-18 09:30:26,859 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFrameworkCore.AbpEntityFrameworkCoreModule, Abp.EntityFrameworkCore, Version=4.1.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-01-18 09:30:26,859 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkCommonModule, Abp.EntityFramework.Common, Version=4.1.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-01-18 09:30:26,860 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AspNetCore.AbpAspNetCoreModule, Abp.AspNetCore, Version=4.1.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-01-18 09:30:26,860 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebCommonModule, Abp.Web.Common, Version=4.1.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-01-18 09:30:26,860 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AspNetCore.SignalR.AbpAspNetCoreSignalRModule, Abp.AspNetCore.SignalR, Version=4.1.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-01-18 09:30:26,865 [1    ] Abp.Modules.AbpModuleManager             - 15 modules loaded.
+DEBUG 2019-01-18 09:30:26,994 [1    ] o.Configuration.LanguageManagementConfig - Converted Abp (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2019-01-18 09:30:26,994 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpZero (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2019-01-18 09:30:26,994 [1    ] o.Configuration.LanguageManagementConfig - Converted ETyhy (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2019-01-18 09:30:26,994 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpWeb (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2019-01-18 09:30:27,530 [1    ] ameworkCore.AbpEntityFrameworkCoreModule - Registering DbContext: MySql.ETyhy.EntityFrameworkCore.ETyhyDbContext, MySql.ETyhy.EntityFrameworkCore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-01-18 09:30:29,043 [1    ] Abp.Localization.LocalizationManager     - Initializing 4 localization sources.
+DEBUG 2019-01-18 09:30:29,198 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: Abp
+DEBUG 2019-01-18 09:30:29,259 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpZero
+DEBUG 2019-01-18 09:30:29,288 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: ETyhy
+DEBUG 2019-01-18 09:30:29,329 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpWeb
+DEBUG 2019-01-18 09:30:29,618 [1    ] Abp.BackgroundJobs.BackgroundJobManager  - Start background worker: Abp.BackgroundJobs.BackgroundJobManager
+DEBUG 2019-01-18 09:30:29,693 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Found 10 classes define auto mapping attributes
+DEBUG 2019-01-18 09:30:29,693 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - MySql.ETyhy.Models.TokenAuth.ExternalLoginProviderInfoModel
+DEBUG 2019-01-18 09:30:29,703 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - MySql.ETyhy.Users.Dto.CreateUserDto
+DEBUG 2019-01-18 09:30:29,703 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - MySql.ETyhy.Users.Dto.UserDto
+DEBUG 2019-01-18 09:30:29,704 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - MySql.ETyhy.Sessions.Dto.TenantLoginInfoDto
+DEBUG 2019-01-18 09:30:29,704 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - MySql.ETyhy.Sessions.Dto.UserLoginInfoDto
+DEBUG 2019-01-18 09:30:29,705 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - MySql.ETyhy.Roles.Dto.CreateRoleDto
+DEBUG 2019-01-18 09:30:29,705 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - MySql.ETyhy.Roles.Dto.PermissionDto
+DEBUG 2019-01-18 09:30:29,705 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - MySql.ETyhy.Roles.Dto.RoleDto
+DEBUG 2019-01-18 09:30:29,706 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - MySql.ETyhy.MultiTenancy.Dto.CreateTenantDto
+DEBUG 2019-01-18 09:30:29,706 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - MySql.ETyhy.MultiTenancy.Dto.TenantDto
+INFO  2019-01-18 09:30:36,293 [16   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/  
+INFO  2019-01-18 09:30:36,293 [15   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 DEBUG http://localhost:21021/  0
+INFO  2019-01-18 09:30:36,428 [15   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 145.1588ms 200 
+INFO  2019-01-18 09:30:42,111 [16   ] ore.Mvc.Internal.ControllerActionInvoker - Route matched with {action = "Index", controller = "Home", area = ""}. Executing action MySql.ETyhy.Web.Host.Controllers.HomeController.Index (MySql.ETyhy.Web.Host)
+INFO  2019-01-18 09:30:43,775 [16   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method MySql.ETyhy.Web.Host.Controllers.HomeController.Index (MySql.ETyhy.Web.Host) - Validation state: Valid
+INFO  2019-01-18 09:30:43,783 [16   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action method MySql.ETyhy.Web.Host.Controllers.HomeController.Index (MySql.ETyhy.Web.Host), returned result Microsoft.AspNetCore.Mvc.RedirectResult in 2.8493ms.
+INFO  2019-01-18 09:30:44,182 [13   ] vc.Infrastructure.RedirectResultExecutor - Executing RedirectResult, redirecting to /swagger.
+INFO  2019-01-18 09:30:44,204 [13   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action MySql.ETyhy.Web.Host.Controllers.HomeController.Index (MySql.ETyhy.Web.Host) in 2085.0736ms
+INFO  2019-01-18 09:30:44,230 [6    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/swagger  
+INFO  2019-01-18 09:30:44,236 [13   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 7957.1415ms 302 
+INFO  2019-01-18 09:30:44,256 [6    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 24.1394ms 301 
+INFO  2019-01-18 09:30:44,263 [7    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/swagger/index.html  
+INFO  2019-01-18 09:30:44,310 [7    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 46.2921ms 200 text/html
+INFO  2019-01-18 09:30:44,351 [18   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/swagger/swagger-ui.css  
+INFO  2019-01-18 09:30:44,378 [7    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/swagger/swagger-ui-bundle.js  
+INFO  2019-01-18 09:30:44,384 [17   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/swagger/swagger-ui-standalone-preset.js  
+INFO  2019-01-18 09:30:44,390 [6    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/swagger/ui/abp.js  
+INFO  2019-01-18 09:30:44,395 [10   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/swagger/ui/abp.swagger.js  
+INFO  2019-01-18 09:30:44,421 [7    ] NetCore.StaticFiles.StaticFileMiddleware - The file /swagger-ui-bundle.js was not modified
+INFO  2019-01-18 09:30:44,424 [17   ] NetCore.StaticFiles.StaticFileMiddleware - The file /swagger-ui-standalone-preset.js was not modified
+INFO  2019-01-18 09:30:44,432 [17   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 50.1573ms 304 application/javascript
+INFO  2019-01-18 09:30:44,436 [7    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 78.1503ms 304 application/javascript
+INFO  2019-01-18 09:30:44,454 [11   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/swagger/ui/abp.swagger.js'. Physical path: 'E:\abp\Mysql.Etyhy\MySql.Etyhy\src\MySql.ETyhy.Web.Host\wwwroot\swagger\ui\abp.swagger.js'
+INFO  2019-01-18 09:30:44,459 [13   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/swagger/ui/abp.js'. Physical path: 'E:\abp\Mysql.Etyhy\MySql.Etyhy\src\MySql.ETyhy.Web.Host\wwwroot\swagger\ui\abp.js'
+INFO  2019-01-18 09:30:44,462 [11   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 65.094ms 200 application/javascript
+INFO  2019-01-18 09:30:44,464 [13   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 74.1003ms 200 application/javascript
+INFO  2019-01-18 09:30:44,472 [18   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+INFO  2019-01-18 09:30:44,475 [18   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 127.9617ms 200 text/css
+INFO  2019-01-18 09:30:45,181 [15   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/swagger/v1/swagger.json  
+INFO  2019-01-18 09:30:45,504 [15   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 323.438ms 200 application/json;charset=utf-8
+INFO  2019-01-18 09:31:00,901 [15   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 POST http://localhost:21021/api/TokenAuth/Authenticate application/json 50
+INFO  2019-01-18 09:31:00,922 [15   ] pNetCore.Cors.Infrastructure.CorsService - CORS policy execution failed.
+INFO  2019-01-18 09:31:00,926 [15   ] pNetCore.Cors.Infrastructure.CorsService - Request origin http://localhost:21021 does not have permission to access the resource.
+INFO  2019-01-18 09:31:00,995 [15   ] ore.Mvc.Internal.ControllerActionInvoker - Route matched with {action = "Authenticate", controller = "TokenAuth", area = ""}. Executing action MySql.ETyhy.Controllers.TokenAuthController.Authenticate (MySql.ETyhy.Web.Core)
+INFO  2019-01-18 09:31:01,002 [15   ] pNetCore.Cors.Infrastructure.CorsService - CORS policy execution failed.
+INFO  2019-01-18 09:31:01,008 [15   ] pNetCore.Cors.Infrastructure.CorsService - Request origin http://localhost:21021 does not have permission to access the resource.
+INFO  2019-01-18 09:31:02,711 [15   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method MySql.ETyhy.Controllers.TokenAuthController.Authenticate (MySql.ETyhy.Web.Core) with arguments (MySql.ETyhy.Models.TokenAuth.AuthenticateModel) - Validation state: Valid
+INFO  2019-01-18 09:31:03,929 [17   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 POST http://localhost:21021/api/TokenAuth/Authenticate application/json 50
+INFO  2019-01-18 09:31:03,932 [17   ] pNetCore.Cors.Infrastructure.CorsService - CORS policy execution failed.
+INFO  2019-01-18 09:31:03,935 [17   ] pNetCore.Cors.Infrastructure.CorsService - Request origin http://localhost:21021 does not have permission to access the resource.
+INFO  2019-01-18 09:31:03,947 [17   ] ore.Mvc.Internal.ControllerActionInvoker - Route matched with {action = "Authenticate", controller = "TokenAuth", area = ""}. Executing action MySql.ETyhy.Controllers.TokenAuthController.Authenticate (MySql.ETyhy.Web.Core)
+INFO  2019-01-18 09:31:03,950 [17   ] pNetCore.Cors.Infrastructure.CorsService - CORS policy execution failed.
+INFO  2019-01-18 09:31:03,952 [17   ] pNetCore.Cors.Infrastructure.CorsService - Request origin http://localhost:21021 does not have permission to access the resource.
+INFO  2019-01-18 09:31:03,964 [17   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method MySql.ETyhy.Controllers.TokenAuthController.Authenticate (MySql.ETyhy.Web.Core) with arguments (MySql.ETyhy.Models.TokenAuth.AuthenticateModel) - Validation state: Valid
+INFO  2019-01-18 09:31:04,205 [21   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action method MySql.ETyhy.Controllers.TokenAuthController.Authenticate (MySql.ETyhy.Web.Core), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 1487.9523ms.
+INFO  2019-01-18 09:31:04,984 [20   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action method MySql.ETyhy.Controllers.TokenAuthController.Authenticate (MySql.ETyhy.Web.Core), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 1014.2097ms.
+INFO  2019-01-18 09:31:05,140 [5    ] .Mvc.Infrastructure.ObjectResultExecutor - Executing ObjectResult, writing value of type 'Abp.Web.Models.AjaxResponse'.
+INFO  2019-01-18 09:31:05,147 [16   ] .Mvc.Infrastructure.ObjectResultExecutor - Executing ObjectResult, writing value of type 'Abp.Web.Models.AjaxResponse'.
+INFO  2019-01-18 09:31:05,186 [16   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action MySql.ETyhy.Controllers.TokenAuthController.Authenticate (MySql.ETyhy.Web.Core) in 1233.6529ms
+INFO  2019-01-18 09:31:05,190 [5    ] ore.Mvc.Internal.ControllerActionInvoker - Executed action MySql.ETyhy.Controllers.TokenAuthController.Authenticate (MySql.ETyhy.Web.Core) in 4184.7961ms
+INFO  2019-01-18 09:31:05,198 [16   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 1268.0544ms 200 application/json; charset=utf-8
+INFO  2019-01-18 09:31:05,202 [5    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 4296.3351ms 200 application/json; charset=utf-8
+INFO  2019-01-18 09:31:15,662 [13   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/api/services/app/Role/GetAll?SkipCount=0&MaxResultCount=10  
+INFO  2019-01-18 09:31:15,741 [13   ] uthentication.JwtBearer.JwtBearerHandler - Successfully validated the token.
+INFO  2019-01-18 09:31:16,058 [10   ] ore.Mvc.Internal.ControllerActionInvoker - Route matched with {area = "app", action = "GetAll", controller = "Role"}. Executing action MySql.ETyhy.Roles.RoleAppService.GetAll (MySql.ETyhy.Application)
+INFO  2019-01-18 09:31:16,524 [10   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method MySql.ETyhy.Roles.RoleAppService.GetAll (MySql.ETyhy.Application) with arguments (MySql.ETyhy.Roles.Dto.PagedRoleResultRequestDto) - Validation state: Valid
+INFO  2019-01-18 09:31:17,301 [16   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action method MySql.ETyhy.Roles.RoleAppService.GetAll (MySql.ETyhy.Application), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 771.6276ms.
+INFO  2019-01-18 09:31:17,377 [21   ] .Mvc.Infrastructure.ObjectResultExecutor - Executing ObjectResult, writing value of type 'Abp.Web.Models.AjaxResponse'.
+INFO  2019-01-18 09:31:17,391 [21   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action MySql.ETyhy.Roles.RoleAppService.GetAll (MySql.ETyhy.Application) in 1327.0831ms
+INFO  2019-01-18 09:31:17,397 [21   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 1735.9795ms 200 application/json; charset=utf-8
+INFO  2019-01-18 09:31:53,381 [17   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/api/services/app/User/GetAll?SkipCount=0&MaxResultCount=10  
+INFO  2019-01-18 09:31:53,388 [17   ] uthentication.JwtBearer.JwtBearerHandler - Successfully validated the token.
+INFO  2019-01-18 09:31:53,504 [23   ] ore.Mvc.Internal.ControllerActionInvoker - Route matched with {area = "app", action = "GetAll", controller = "User"}. Executing action MySql.ETyhy.Users.UserAppService.GetAll (MySql.ETyhy.Application)
+INFO  2019-01-18 09:31:53,968 [23   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method MySql.ETyhy.Users.UserAppService.GetAll (MySql.ETyhy.Application) with arguments (MySql.ETyhy.Users.Dto.PagedUserResultRequestDto) - Validation state: Valid
+INFO  2019-01-18 09:31:54,154 [16   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action method MySql.ETyhy.Users.UserAppService.GetAll (MySql.ETyhy.Application), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 180.499ms.
+INFO  2019-01-18 09:31:54,325 [24   ] .Mvc.Infrastructure.ObjectResultExecutor - Executing ObjectResult, writing value of type 'Abp.Web.Models.AjaxResponse'.
+INFO  2019-01-18 09:31:54,353 [24   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action MySql.ETyhy.Users.UserAppService.GetAll (MySql.ETyhy.Application) in 842.7858ms
+INFO  2019-01-18 09:31:54,359 [24   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 978.8178ms 200 application/json; charset=utf-8
+DEBUG 2019-01-18 13:51:20,060 [1    ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2019-01-18 13:51:20,097 [1    ] Abp.Modules.AbpModuleManager             - Found 15 ABP modules in total.
+DEBUG 2019-01-18 13:51:20,121 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: MySql.ETyhy.Web.Host.Startup.ETyhyWebHostModule, MySql.ETyhy.Web.Host, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-01-18 13:51:20,125 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: MySql.ETyhy.ETyhyWebCoreModule, MySql.ETyhy.Web.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-01-18 13:51:20,126 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: MySql.ETyhy.ETyhyApplicationModule, MySql.ETyhy.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-01-18 13:51:20,126 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: MySql.ETyhy.ETyhyCoreModule, MySql.ETyhy.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-01-18 13:51:20,127 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCoreModule, Abp.ZeroCore, Version=4.1.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-01-18 13:51:20,127 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCommonModule, Abp.Zero.Common, Version=4.1.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-01-18 13:51:20,127 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=4.1.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-01-18 13:51:20,128 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AutoMapper.AbpAutoMapperModule, Abp.AutoMapper, Version=4.1.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-01-18 13:51:20,128 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: MySql.ETyhy.EntityFrameworkCore.ETyhyEntityFrameworkModule, MySql.ETyhy.EntityFrameworkCore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-01-18 13:51:20,129 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.EntityFrameworkCore.AbpZeroCoreEntityFrameworkCoreModule, Abp.ZeroCore.EntityFrameworkCore, Version=4.1.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-01-18 13:51:20,129 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFrameworkCore.AbpEntityFrameworkCoreModule, Abp.EntityFrameworkCore, Version=4.1.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-01-18 13:51:20,129 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkCommonModule, Abp.EntityFramework.Common, Version=4.1.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-01-18 13:51:20,130 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AspNetCore.AbpAspNetCoreModule, Abp.AspNetCore, Version=4.1.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-01-18 13:51:20,130 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebCommonModule, Abp.Web.Common, Version=4.1.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-01-18 13:51:20,130 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AspNetCore.SignalR.AbpAspNetCoreSignalRModule, Abp.AspNetCore.SignalR, Version=4.1.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-01-18 13:51:20,135 [1    ] Abp.Modules.AbpModuleManager             - 15 modules loaded.
+DEBUG 2019-01-18 13:51:20,216 [1    ] o.Configuration.LanguageManagementConfig - Converted Abp (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2019-01-18 13:51:20,217 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpZero (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2019-01-18 13:51:20,217 [1    ] o.Configuration.LanguageManagementConfig - Converted ETyhy (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2019-01-18 13:51:20,217 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpWeb (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2019-01-18 13:51:20,605 [1    ] ameworkCore.AbpEntityFrameworkCoreModule - Registering DbContext: MySql.ETyhy.EntityFrameworkCore.ETyhyDbContext, MySql.ETyhy.EntityFrameworkCore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-01-18 13:51:21,174 [1    ] Abp.Localization.LocalizationManager     - Initializing 4 localization sources.
+DEBUG 2019-01-18 13:51:21,315 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: Abp
+DEBUG 2019-01-18 13:51:21,375 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpZero
+DEBUG 2019-01-18 13:51:21,404 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: ETyhy
+DEBUG 2019-01-18 13:51:21,444 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpWeb
+DEBUG 2019-01-18 13:51:21,495 [1    ] Abp.BackgroundJobs.BackgroundJobManager  - Start background worker: Abp.BackgroundJobs.BackgroundJobManager
+DEBUG 2019-01-18 13:51:21,563 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Found 10 classes define auto mapping attributes
+DEBUG 2019-01-18 13:51:21,563 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - MySql.ETyhy.Models.TokenAuth.ExternalLoginProviderInfoModel
+DEBUG 2019-01-18 13:51:21,573 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - MySql.ETyhy.Users.Dto.CreateUserDto
+DEBUG 2019-01-18 13:51:21,574 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - MySql.ETyhy.Users.Dto.UserDto
+DEBUG 2019-01-18 13:51:21,574 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - MySql.ETyhy.Sessions.Dto.TenantLoginInfoDto
+DEBUG 2019-01-18 13:51:21,575 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - MySql.ETyhy.Sessions.Dto.UserLoginInfoDto
+DEBUG 2019-01-18 13:51:21,575 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - MySql.ETyhy.Roles.Dto.CreateRoleDto
+DEBUG 2019-01-18 13:51:21,575 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - MySql.ETyhy.Roles.Dto.PermissionDto
+DEBUG 2019-01-18 13:51:21,575 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - MySql.ETyhy.Roles.Dto.RoleDto
+DEBUG 2019-01-18 13:51:21,576 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - MySql.ETyhy.MultiTenancy.Dto.CreateTenantDto
+DEBUG 2019-01-18 13:51:21,576 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - MySql.ETyhy.MultiTenancy.Dto.TenantDto
+INFO  2019-01-18 13:51:27,289 [16   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/  
+INFO  2019-01-18 13:51:29,088 [16   ] ore.Mvc.Internal.ControllerActionInvoker - Route matched with {action = "Index", controller = "Home", area = ""}. Executing action MySql.ETyhy.Web.Host.Controllers.HomeController.Index (MySql.ETyhy.Web.Host)
+INFO  2019-01-18 13:51:29,628 [16   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method MySql.ETyhy.Web.Host.Controllers.HomeController.Index (MySql.ETyhy.Web.Host) - Validation state: Valid
+INFO  2019-01-18 13:51:29,633 [16   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action method MySql.ETyhy.Web.Host.Controllers.HomeController.Index (MySql.ETyhy.Web.Host), returned result Microsoft.AspNetCore.Mvc.RedirectResult in 2.6931ms.
+INFO  2019-01-18 13:51:30,004 [18   ] vc.Infrastructure.RedirectResultExecutor - Executing RedirectResult, redirecting to /swagger.
+INFO  2019-01-18 13:51:30,021 [18   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action MySql.ETyhy.Web.Host.Controllers.HomeController.Index (MySql.ETyhy.Web.Host) in 927.9689ms
+INFO  2019-01-18 13:51:30,109 [18   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 2827.1303ms 302 
+INFO  2019-01-18 13:51:30,113 [9    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/swagger/index.html  
+INFO  2019-01-18 13:51:30,167 [9    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 54.0138ms 200 text/html
+INFO  2019-01-18 13:51:30,189 [9    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/swagger/swagger-ui.css  
+INFO  2019-01-18 13:51:30,192 [18   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/swagger/swagger-ui-bundle.js  
+INFO  2019-01-18 13:51:30,192 [16   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/swagger/ui/abp.js  
+INFO  2019-01-18 13:51:30,193 [15   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/swagger/ui/abp.swagger.js  
+INFO  2019-01-18 13:51:30,193 [11   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/swagger/swagger-ui-standalone-preset.js  
+INFO  2019-01-18 13:51:30,218 [11   ] NetCore.StaticFiles.StaticFileMiddleware - The file /swagger-ui-standalone-preset.js was not modified
+INFO  2019-01-18 13:51:30,218 [18   ] NetCore.StaticFiles.StaticFileMiddleware - The file /swagger-ui-bundle.js was not modified
+INFO  2019-01-18 13:51:30,218 [9    ] NetCore.StaticFiles.StaticFileMiddleware - The file /swagger-ui.css was not modified
+INFO  2019-01-18 13:51:30,218 [16   ] NetCore.StaticFiles.StaticFileMiddleware - The file /swagger/ui/abp.js was not modified
+INFO  2019-01-18 13:51:30,218 [15   ] NetCore.StaticFiles.StaticFileMiddleware - The file /swagger/ui/abp.swagger.js was not modified
+INFO  2019-01-18 13:51:30,224 [16   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 31.3863ms 304 application/javascript
+INFO  2019-01-18 13:51:30,224 [15   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 30.9761ms 304 application/javascript
+INFO  2019-01-18 13:51:30,224 [9    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 34.5969ms 304 text/css
+INFO  2019-01-18 13:51:30,224 [18   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 32.0269ms 304 application/javascript
+INFO  2019-01-18 13:51:30,224 [11   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 30.632ms 304 application/javascript
+INFO  2019-01-18 13:51:30,556 [22   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/swagger/v1/swagger.json  
+INFO  2019-01-18 13:51:30,946 [22   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 390.5047ms 200 application/json;charset=utf-8
+INFO  2019-01-18 13:52:00,504 [14   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 POST http://localhost:21021/api/TokenAuth/Authenticate application/json 50
+INFO  2019-01-18 13:52:00,514 [14   ] pNetCore.Cors.Infrastructure.CorsService - CORS policy execution failed.
+INFO  2019-01-18 13:52:00,514 [14   ] pNetCore.Cors.Infrastructure.CorsService - Request origin http://localhost:21021 does not have permission to access the resource.
+INFO  2019-01-18 13:52:00,575 [14   ] ore.Mvc.Internal.ControllerActionInvoker - Route matched with {action = "Authenticate", controller = "TokenAuth", area = ""}. Executing action MySql.ETyhy.Controllers.TokenAuthController.Authenticate (MySql.ETyhy.Web.Core)
+INFO  2019-01-18 13:52:00,575 [14   ] pNetCore.Cors.Infrastructure.CorsService - CORS policy execution failed.
+INFO  2019-01-18 13:52:00,575 [14   ] pNetCore.Cors.Infrastructure.CorsService - Request origin http://localhost:21021 does not have permission to access the resource.
+INFO  2019-01-18 13:52:01,134 [14   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method MySql.ETyhy.Controllers.TokenAuthController.Authenticate (MySql.ETyhy.Web.Core) with arguments (MySql.ETyhy.Models.TokenAuth.AuthenticateModel) - Validation state: Valid
+INFO  2019-01-18 13:52:02,266 [13   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action method MySql.ETyhy.Controllers.TokenAuthController.Authenticate (MySql.ETyhy.Web.Core), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 1132.3972ms.
+INFO  2019-01-18 13:52:02,605 [13   ] .Mvc.Infrastructure.ObjectResultExecutor - Executing ObjectResult, writing value of type 'Abp.Web.Models.AjaxResponse'.
+INFO  2019-01-18 13:52:02,633 [13   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action MySql.ETyhy.Controllers.TokenAuthController.Authenticate (MySql.ETyhy.Web.Core) in 2057.4411ms
+INFO  2019-01-18 13:52:02,635 [13   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 2130.6917ms 200 application/json; charset=utf-8
+INFO  2019-01-18 13:52:27,440 [21   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/swagger/swagger-ui.css  
+INFO  2019-01-18 13:52:27,442 [21   ] NetCore.StaticFiles.StaticFileMiddleware - The file /swagger-ui.css was not modified
+INFO  2019-01-18 13:52:27,442 [21   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 1.626ms 304 text/css
+INFO  2019-01-18 13:52:27,471 [21   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/swagger/swagger-ui-bundle.js.map  
+INFO  2019-01-18 13:52:27,473 [27   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/swagger/swagger-ui-standalone-preset.js.map  
+INFO  2019-01-18 13:52:27,490 [25   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/swagger/swagger-ui.css.map  
+INFO  2019-01-18 13:52:27,492 [25   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/swagger-ui.css.map'. Physical path: 'N/A'
+INFO  2019-01-18 13:52:27,492 [25   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 2.7079ms 200 text/plain
+INFO  2019-01-18 13:52:27,569 [27   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/swagger-ui-standalone-preset.js.map'. Physical path: 'N/A'
+INFO  2019-01-18 13:52:27,571 [27   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 98.4732ms 200 text/plain
+INFO  2019-01-18 13:52:27,826 [23   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/swagger-ui-bundle.js.map'. Physical path: 'N/A'
+INFO  2019-01-18 13:52:27,826 [23   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 354.7137ms 200 text/plain
+INFO  2019-01-18 13:52:46,430 [27   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/swagger/v1/swagger.json  
+INFO  2019-01-18 13:52:46,464 [27   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 33.4898ms 200 application/json;charset=utf-8
+INFO  2019-01-18 13:52:46,657 [25   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/favicon.ico  
+INFO  2019-01-18 13:52:46,659 [25   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 1.8605ms 404 
+INFO  2019-01-18 14:02:15,936 [56   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 POST http://127.0.0.1:34832/iisintegration  0
+INFO  2019-01-18 14:02:15,936 [56   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 0.6048ms 202 
+DEBUG 2019-01-18 14:02:15,942 [56   ] Abp.Modules.AbpModuleManager             - Shutting down has been started
+DEBUG 2019-01-18 14:02:15,945 [56   ] Abp.BackgroundJobs.BackgroundJobManager  - Stop background worker: Abp.BackgroundJobs.BackgroundJobManager
+DEBUG 2019-01-18 14:02:15,947 [56   ] Abp.BackgroundJobs.BackgroundJobManager  - WaitToStop background worker: Abp.BackgroundJobs.BackgroundJobManager
+DEBUG 2019-01-18 14:02:15,947 [56   ] Abp.Modules.AbpModuleManager             - Shutting down completed.

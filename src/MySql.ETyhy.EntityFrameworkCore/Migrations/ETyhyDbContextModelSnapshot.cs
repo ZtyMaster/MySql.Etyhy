@@ -892,8 +892,12 @@ namespace MySql.ETyhy.Migrations
 
                     b.Property<int>("AccessFailedCount");
 
+                    b.Property<string>("Appid");
+
                     b.Property<string>("AuthenticationSource")
                         .HasMaxLength(64);
+
+                    b.Property<int?>("ComasId");
 
                     b.Property<string>("ConcurrencyStamp")
                         .IsConcurrencyToken()
@@ -971,6 +975,8 @@ namespace MySql.ETyhy.Migrations
 
                     b.HasKey("Id");
 
+                    b.HasIndex("ComasId");
+
                     b.HasIndex("CreatorUserId");
 
                     b.HasIndex("DeleterUserId");
@@ -982,6 +988,108 @@ namespace MySql.ETyhy.Migrations
                     b.HasIndex("TenantId", "NormalizedUserName");
 
                     b.ToTable("AbpUsers");
+                });
+
+            modelBuilder.Entity("MySql.ETyhy.Bumen.BuMens", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd();
+
+                    b.Property<int>("ComasId");
+
+                    b.Property<DateTime>("CreationTime");
+
+                    b.Property<long?>("CreatorUserId");
+
+                    b.Property<long?>("DeleterUserId");
+
+                    b.Property<DateTime?>("DeletionTime");
+
+                    b.Property<bool>("IsDeleted");
+
+                    b.Property<bool>("IsTopBm");
+
+                    b.Property<DateTime?>("LastModificationTime");
+
+                    b.Property<long?>("LastModifierUserId");
+
+                    b.Property<int>("Shot");
+
+                    b.Property<string>("TName")
+                        .IsRequired()
+                        .HasMaxLength(255);
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("ComasId");
+
+                    b.ToTable("BuMenss");
+                });
+
+            modelBuilder.Entity("MySql.ETyhy.ComPay.Bumen.ZhiWu.Zhiws", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd();
+
+                    b.Property<int>("BumensId");
+
+                    b.Property<DateTime>("CreationTime");
+
+                    b.Property<long?>("CreatorUserId");
+
+                    b.Property<long?>("DeleterUserId");
+
+                    b.Property<DateTime?>("DeletionTime");
+
+                    b.Property<bool>("IsDeleted");
+
+                    b.Property<DateTime?>("LastModificationTime");
+
+                    b.Property<long?>("LastModifierUserId");
+
+                    b.Property<int>("Shot");
+
+                    b.Property<string>("TName")
+                        .IsRequired()
+                        .HasMaxLength(255);
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("BumensId");
+
+                    b.ToTable("Zhiwss");
+                });
+
+            modelBuilder.Entity("MySql.ETyhy.ComPay.Comas", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd();
+
+                    b.Property<DateTime>("CreationTime");
+
+                    b.Property<long?>("CreatorUserId");
+
+                    b.Property<long?>("DeleterUserId");
+
+                    b.Property<DateTime?>("DeletionTime");
+
+                    b.Property<bool>("IsDeleted");
+
+                    b.Property<DateTime?>("LastModificationTime");
+
+                    b.Property<long?>("LastModifierUserId");
+
+                    b.Property<int>("MaxPersons");
+
+                    b.Property<DateTime>("OverTime");
+
+                    b.Property<string>("TName")
+                        .IsRequired()
+                        .HasMaxLength(255);
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Comass");
                 });
 
             modelBuilder.Entity("MySql.ETyhy.MultiTenancy.Tenant", b =>
@@ -1170,6 +1278,10 @@ namespace MySql.ETyhy.Migrations
 
             modelBuilder.Entity("MySql.ETyhy.Authorization.Users.User", b =>
                 {
+                    b.HasOne("MySql.ETyhy.ComPay.Comas", "Comas")
+                        .WithMany("Users")
+                        .HasForeignKey("ComasId");
+
                     b.HasOne("MySql.ETyhy.Authorization.Users.User", "CreatorUser")
                         .WithMany()
                         .HasForeignKey("CreatorUserId");
@@ -1181,6 +1293,22 @@ namespace MySql.ETyhy.Migrations
                     b.HasOne("MySql.ETyhy.Authorization.Users.User", "LastModifierUser")
                         .WithMany()
                         .HasForeignKey("LastModifierUserId");
+                });
+
+            modelBuilder.Entity("MySql.ETyhy.Bumen.BuMens", b =>
+                {
+                    b.HasOne("MySql.ETyhy.ComPay.Comas", "Comas")
+                        .WithMany("BuMens")
+                        .HasForeignKey("ComasId")
+                        .OnDelete(DeleteBehavior.Cascade);
+                });
+
+            modelBuilder.Entity("MySql.ETyhy.ComPay.Bumen.ZhiWu.Zhiws", b =>
+                {
+                    b.HasOne("MySql.ETyhy.Bumen.BuMens", "Bumens")
+                        .WithMany("Zhiws")
+                        .HasForeignKey("BumensId")
+                        .OnDelete(DeleteBehavior.Cascade);
                 });
 
             modelBuilder.Entity("MySql.ETyhy.MultiTenancy.Tenant", b =>

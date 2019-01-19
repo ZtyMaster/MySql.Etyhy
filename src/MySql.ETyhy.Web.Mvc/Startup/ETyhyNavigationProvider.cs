@@ -42,6 +42,27 @@ namespace MySql.ETyhy.Web.Startup
                         requiredPermissionName: PermissionNames.Pages_Roles
                     )
                 ).AddItem(
+                      new MenuItemDefinition(
+                          PageNames.Comas,
+                          L("Comas"),
+                          url:"Comas",
+                          icon: "business",
+                          requiredPermissionName:PermissionNames.Pages_Comas)
+                      ).AddItem(
+                      new MenuItemDefinition(
+                          PageNames.BuMens,
+                          L("BuMens"),
+                          url: "BuMens",
+                          icon: "poll",
+                          requiredPermissionName: PermissionNames.Pages_BuMens)
+                      ).AddItem(
+                      new MenuItemDefinition(
+                          PageNames.Zhiwus,
+                          L("Zhiws"),
+                          url: "Zhiws",
+                          icon: "label",
+                          requiredPermissionName: PermissionNames.Pages_Zhiws)
+                      ).AddItem(
                     new MenuItemDefinition(
                         PageNames.About,
                         L("About"),
